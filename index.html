@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frank Fu's Portfolio</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap');</style>
+    </head>
+    <body id="homepage">
+        <header>
+            <div class="wrapper">
+            </div>
+            <div class="wrapper">
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a id="fbook" href="index.html">.</a></li>
+                    <li><a id="twitter" href="blog.html">.</a></li>
+                    <li><a id="linkedin">.</a></li>
+                    <li><button type="button" onclick="hamburger()">Hire me!</button></li>
+                </ul>
+            </nav>
+            <img src="group.jpg" alt="meditation" class="fade-in-image">
+            <div><p>welcome to</p><h1>Mindn'Soul</h1></div>
+        </header>
+        <section class="wrapper">
+            <div class="newadventure">
+                <h3>New adventure</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <a href="#" class="button">Find out more</a>
+            </div>
+                <div class="adventure"><div><img src="small-box.jpg" alt="group yoga">  </div></div>
+        </section>
+        <section class="wrapper gray spaced">
+            <h2>My Projects</h2>
+            <img src="gallery-image1.jpg" alt="upside down yoga">
+            <img src="gallery-image2.jpg" alt="duo yoga">
+            <img src="gallery-image3.jpg" alt="beach yoga">
+        </section>
+        <section class="wrapper quad spaced">
+            <div>
+            <h4>Customized offers</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi omnis ipsa itaque atque excepturi ipsum laboriosam esse expedita eius molestias</p>
+            </div>
+            <div>
+                <h4>Community</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi omnis ipsa itaque atque excepturi ipsum laboriosam esse expedita eius molestias</p>
+            </div>
+            <div>
+                <h4>Blog</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi omnis ipsa itaque atque excepturi ipsum laboriosam esse expedita eius molestias</p>
+            </div>
+            <div>
+                <h4>Get in touch</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quasi omnis ipsa itaque atque excepturi ipsum laboriosam esse expedita eius molestias</p>
+            </div>   
+        </section>
+        <section class="gray quad">
+            <div id="leftmarigoldbackground"><div><img src="left-image.jpg" alt="3 women in yoga attire smiling at each other"></div></div>
+            <div class="wrapper">
+                <h3>Group programs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est tempore modi dicta vel enim debitis minus nihil repudiandae ipsam? Iusto obcaecati atque aliquam itaque quos? Molestiae illo tempora facere?</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="wrapper">
+                <h3>New Locations</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum est tempore modi dicta vel enim debitis minus nihil repudiandae ipsam? Iusto obcaecati atque aliquam itaque quos? Molestiae illo tempora facere?</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div id="rightmarigoldbackground"><div><img src="right-image.jpg" alt="toned bald bearded man planking without use of legs"></div></div>
+        </section>
+        <img src="banner-image.jpg" alt="group yoga on a beach" id="bannerimage">
+        <section class="centereverything">
+            <div class="wrapper">
+            <h3>Free trials</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequuntur quidem corrupti inventore voluptatum illo, ducimus cupiditate officiis aliquid voluptate autem, ut rerum dolorem exercitationem repudiandae minima eos provident dolorum.</p>
+            <a class="button" href="#">Find Out More</a>
+            </div>
+        </section>
+        <footer><p>Copyright @ 2019 HackerYou</p></footer>
+    </body>
+
+   
+    <style>
+        button {
+            cursor: pointer;
+        }
+        nav {
+            visibility: visible;
+        }
+    </style>
+
+<script>
+    function hamburger() {
+        var x = document.querySelector("nav");
+        x.style.visibility = getComputedStyle(x).visibility;
+            if (x.style.visibility == "visible") {
+            x.style.visibility = "hidden";
+            document.querySelector("button").style.visibility = "visible";
+            } else {
+            x.style.visibility = "visible";
+}
+}
+</script>
+</html>
