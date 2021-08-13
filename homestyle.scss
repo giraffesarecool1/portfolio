@@ -2,7 +2,7 @@
 @import 'globalvariables';
 
 html {
-    background-color: #AFD275;
+    background-color: #5bccf6;
     font-size: 16px;
 }
 header {
@@ -15,7 +15,7 @@ header {
             font-family: "Open sans";
             font-size: 2.59375rem;
             text-align: center;
-            color: $marigold;
+            color: black;
             padding: 5px 0px;
             width: 100px;
          }
@@ -37,19 +37,19 @@ p {
 
  h1 {
         font-family: 'Open sans';
-        color: $marigold;
+        color: black;
         font-size: 7.1875rem;
         margin: 0;
  }
 h2 {
-    color: $marigold;
+    color: black;
     font-size: 6.5625rem;
     font-family: 'Open sans';
     line-height: 4.35rem;
     letter-spacing: 0.68125rem;
 }
  h3 {
-    color: $marigold;
+    color: black;
     font-size: 2.8125rem;
     font-family: 'Open sans';
     line-height: 58px;
@@ -66,16 +66,21 @@ h2 {
 }
 
  .gray {
-    background-image: url("pinkgradient.jpg")
+    background-color: #fcde67;
  }
 
  .spaced {
     justify-content: space-around;
+    h2 {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        text-align: center;
+    }
  }
 
  h4 {
      font-family: 'Open sans';
-     color: $marigold;
+     color: black;
      line-height: 3.625rem;
      letter-spacing: 0.26875rem;
      margin-top: 1rem;
@@ -129,7 +134,11 @@ footer {
 
 .newadventure {
     flex-basis: 75%;
-    padding-right: 50px;
+    padding: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -171,7 +180,7 @@ input, textarea {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid $marigold;
+    border-bottom: 2px solid black;
     resize: none;
     color: gray;
 }
@@ -192,7 +201,7 @@ form.wrapper {
 #commenttext {
     height: 20rem;
     flex-basis: 100%;
-    border: 2px solid $marigold;
+    border: 2px solid black;
     margin-top: 2rem;
     text-align: start;
 }
@@ -217,7 +226,7 @@ form.wrapper {
         font-size: 2rem;
     }
     span {
-        color: $marigold;
+        color: black;
         margin-right: 1rem;
     }
     img {
@@ -229,7 +238,7 @@ form.wrapper {
 
 #homepage {
     header {
-        background-image: url("pinkgradient.jpg");
+        background-color: #fcde67;
         .wrapper {
             padding: 10px 10%;
         }
@@ -269,7 +278,7 @@ form.wrapper {
         flex-shrink: 1;;
         margin-right: 0px;
         div {
-            background-color: $marigold;
+            background-color: black;
             flex-grow: 0;
             flex-shrink: 0;
             margin-left: 25px;
@@ -320,7 +329,7 @@ form.wrapper {
 }
 
 .yellowp {
-    color: $marigold;
+    color: black;
 }
 
 .fade-in-image {
@@ -374,16 +383,11 @@ form.wrapper {
     color: rgba(0, 0, 0, 0);
 }
 
-button {
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0);
-    border-style: solid;
-    border-radius: 7px;
-    color: white;
-}
+
 
 nav {
     width: 100%;
+    visibility: hidden;
     ul{
         width: 100%;
         font-family: "Lato";
@@ -402,7 +406,7 @@ nav {
         align-items: flex-start;
         justify-content: center;
         a:hover {
-            color: $marigold;
+            color: black;
         }
         li {
             flex-basis: 30px;
@@ -413,4 +417,14 @@ nav {
         background-position: center;}
         }
 }
+}
+
+button {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    visibility: visible;
 }
