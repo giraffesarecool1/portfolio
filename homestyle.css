@@ -302,11 +302,19 @@ h3 {
 
 .spaced {
   justify-content: space-around;
+  flex-wrap: nowrap;
 }
 .spaced h2 {
   flex-basis: 100%;
   flex-shrink: 0;
   text-align: center;
+}
+
+.spaced.gray img {
+  flex-basis: 10%;
+  width: 100%;
+  flex-shrink: 1;
+  height: 350px;
 }
 
 h4 {
@@ -368,11 +376,13 @@ footer p {
 }
 
 .newadventure {
-  flex-basis: 75%;
-  padding: 30px;
+  flex-basis: 60%;
+  padding: 20px;
   border-style: solid;
   border-radius: 20px;
+  border-color: darkblue;
   margin-right: 30px;
+  margin-left: 30px;
   margin-top: 30px;
 }
 
@@ -505,15 +515,14 @@ form.wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-#homepage .adventure {
+#homepage .juno {
   flex: 0 0 10%;
 }
-#homepage .adventure div {
+#homepage .juno div {
   background-color: #555F02;
-  width: 304px;
   height: 304px;
 }
-#homepage .adventure div img {
+#homepage .juno div img {
   position: relative;
   top: -25px;
   right: -25px;
@@ -666,4 +675,19 @@ button {
   border-color: white;
   color: white;
   visibility: visible;
+}
+
+.grabbable {
+  width: 300px;
+  height: 300px;
+  cursor: grab;
+  overflow: auto;
+  cursor: -webkit-grab;
+  cursor: grab;
+  scrollbar-width: none;
+}
+
+.grabbable::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }/*# sourceMappingURL=homestyle.css.map */

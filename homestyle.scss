@@ -71,12 +71,23 @@ h2 {
 
  .spaced {
     justify-content: space-around;
+    flex-wrap: nowrap;
     h2 {
         flex-basis: 100%;
         flex-shrink: 0;
         text-align: center;
     }
  }
+
+.spaced.gray {
+    img {
+        flex-basis: 10%;
+        width: 100%;
+        flex-shrink: 1;
+        height: 350px;
+    }
+}
+
 
  h4 {
      font-family: 'Open sans';
@@ -133,11 +144,13 @@ footer {
 }
 
 .newadventure {
-    flex-basis: 75%;
-    padding: 30px;
+    flex-basis: 60%;
+    padding: 20px;
     border-style: solid;
     border-radius: 20px;
+    border-color: darkblue;
     margin-right: 30px;
+    margin-left: 30px;
     margin-top: 30px;
 }
 
@@ -255,11 +268,10 @@ form.wrapper {
         display: flex;
         flex-wrap: wrap;
     }
-    .adventure {
+    .juno {
         flex: 0 0 10%;
         div{
             background-color: $mudgreen;
-            width: 304px;
             height: 304px;
             img {
                 position: relative;
@@ -427,4 +439,19 @@ button {
     border-color: white;
     color: white;
     visibility: visible;
+}
+
+.grabbable {
+    width: 300px;
+    height: 300px;
+    cursor: grab;
+    overflow: auto;
+    cursor: -webkit-grab;
+    cursor: grab;
+    scrollbar-width: none; 
+}
+
+.grabbable::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
